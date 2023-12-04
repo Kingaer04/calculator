@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="calculator-main">
+        <div class="top">
+            <div class="ttop">
+                <h4>calc</h4>
+                <div class="theme">
+                    <h6>THEME</h6>
+                    <div id="mode">
+                        <h6 class="numbers">1</h6>
+                        <h6 class="numbers">2</h6>
+                        <h6 class="numbers">3</h6>
+                        <span class="indicator"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main-screen">
+                <div id="previous-operand"></div>
+                <div id="current-operand">0</div>
+        </div>
+        <div id="calculator">
+            <div class="button-section">
+                <button class="nor-btn">7</button>
+                <button class="nor-btn">8</button>
+                <button class="nor-btn">9</button>
+                <button id="del-btn">DEL</button>
+            </div>
+            <div class="button-section">
+                <button class="nor-btn">4</button>
+                <button class="nor-btn">5</button>
+                <button class="nor-btn">6</button>
+                <button class="operand-btn">+</button>
+            </div>
+            <div class="button-section">
+                <button class="nor-btn">1</button>
+                <button class="nor-btn">2</button>
+                <button class="nor-btn">3</button>
+                <button class="operand-btn">-</button>
+            </div>
+            <div class="button-section">
+                <button class="nor-btn">.</button>
+                <button class="nor-btn">0</button>
+                <button class="operand-btn">/</button>
+                <button class="operand-btn">*</button>
+            </div>
+            <div class="last-btn">
+                <button id="reset-btn">RESET</button>
+                <button id="equals-to-btn">=</button>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
